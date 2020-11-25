@@ -70,4 +70,12 @@ console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', '
 console.log(getUsersWithFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
 
 
+// =============== Задание 9 ===============
+const getNamesSortedByFriendsCount = users => {
+    return [...users].sort((a, b) => a.friends.length - b.friends.length).map(({ name }) => name);
+};
+
+console.log(getNamesSortedByFriendsCount(users));
+// [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
+
 
