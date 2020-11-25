@@ -23,3 +23,11 @@ const getUsersWithGender = (users, gender) => {
 };
 
 console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+
+
+// Задание 4
+const getInactiveUsers = users => {
+    return users.filter(user => !user.isActive)
+};
+
+console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
