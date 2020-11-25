@@ -53,7 +53,12 @@ console.log(getUsersWithAge(users, 30, 40));
 // [объект Moore Hensley, объект Sharlene Bush, объект Blackburn Dotson, объект Sheree Anthony]
 
 
+// =============== Задание 7 ===============
+const calculateTotalBalance = users => {
+    return users.reduce((totalBalance, { balance }) => (totalBalance += balance), 0)
+};
 
+console.log(calculateTotalBalance(users)); // 20916
 
 
 
