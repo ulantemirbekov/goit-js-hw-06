@@ -19,7 +19,7 @@ console.log(getUsersWithEyeColor(users, 'blue')); // [объект Moore Hensley
 
 // Задание 3
 const getUsersWithGender = (users, gender) => {
-    return users.filter(user => user.gender === gender).map(user => user.name)
+    return users.filter(user => user.gender === gender).map(user => user.name);
 };
 
 console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
@@ -27,7 +27,23 @@ console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazq
 
 // Задание 4
 const getInactiveUsers = users => {
-    return users.filter(user => !user.isActive)
+    return users.filter(user => !user.isActive);
 };
 
 console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
+
+
+// Задание 5
+const getUserWithEmail = (users, email) => {
+    return users.filter(user => user.email === email);
+};
+
+console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); // {объект пользователя Sheree Anthony}
+console.log(getUserWithEmail(users, 'elmahead@omatom.com')); // {объект пользователя Elma Head}
+
+
+
+
+
+
+
