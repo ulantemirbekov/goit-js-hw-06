@@ -35,7 +35,7 @@ console.log(getInactiveUsers(users)); // [объект Moore Hensley, объек
 
 // =============== Задание 5 ===============
 const getUserWithEmail = (users, email) => {
-    return users.filter(user => user.email === email);
+    return users.find(user => user.email === email);
 };
 
 console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); // {объект пользователя Sheree Anthony}
