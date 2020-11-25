@@ -1,6 +1,6 @@
 import users from "./users.js";
 
-// Задание 1
+// =============== Задание 1 ===============
 const getUserNames = users => {
     return users.map(user => user.name);
 };
@@ -9,7 +9,7 @@ console.log(getUserNames(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
 
 
-// Задание 2
+// =============== Задание 2 ===============
 const getUsersWithEyeColor = (users, color) => {
     return users.filter(user => user.eyeColor === color);
 };
@@ -17,7 +17,7 @@ const getUsersWithEyeColor = (users, color) => {
 console.log(getUsersWithEyeColor(users, 'blue')); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
 
 
-// Задание 3
+// =============== Задание 3 ===============
 const getUsersWithGender = (users, gender) => {
     return users.filter(user => user.gender === gender).map(user => user.name);
 };
@@ -25,7 +25,7 @@ const getUsersWithGender = (users, gender) => {
 console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 
 
-// Задание 4
+// =============== Задание 4 ===============
 const getInactiveUsers = users => {
     return users.filter(user => !user.isActive);
 };
@@ -33,7 +33,7 @@ const getInactiveUsers = users => {
 console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
 
 
-// Задание 5
+// =============== Задание 5 ===============
 const getUserWithEmail = (users, email) => {
     return users.filter(user => user.email === email);
 };
@@ -42,7 +42,7 @@ console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); // {объект 
 console.log(getUserWithEmail(users, 'elmahead@omatom.com')); // {объект пользователя Elma Head}
 
 
-// Задание 6
+// =============== Задание 6 ===============
 const getUsersWithAge = (users, min, max) => {
     return users.filter(user => user.age >= min && user.age <= max)
 };
@@ -51,6 +51,7 @@ console.log(getUsersWithAge(users, 20, 30)); // [объект Ross Vazquez, об
 
 console.log(getUsersWithAge(users, 30, 40));
 // [объект Moore Hensley, объект Sharlene Bush, объект Blackburn Dotson, объект Sheree Anthony]
+
 
 
 
