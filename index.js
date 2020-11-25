@@ -79,3 +79,14 @@ console.log(getNamesSortedByFriendsCount(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
 
 
+// =============== Задание 10 ===============
+const getSortedUniqueSkills = users => {
+    return users.reduce((allSkills, user) => [...allSkills, ...user.skills], [])
+        .filter((skill, index, skills) => skills.indexOf(skill) === index)
+        .sort()
+};
+
+console.log(getSortedUniqueSkills(users));
+// [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
+
+
